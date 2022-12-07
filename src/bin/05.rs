@@ -21,8 +21,8 @@ fn main() {
             }
         }
     }
-    for i in 0..9 {
-        stacks[i].reverse();
+    for stack in &mut stacks {
+        stack.reverse();
     }
     iter.next();
     iter.next();
